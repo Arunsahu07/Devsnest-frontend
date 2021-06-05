@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            position:absolute;
+            background-color:skyblue;
+            
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+
+        }
+        .colf ,.cols{
+            display: flex;
+            justify-content: center;
+            
+            flex-direction: column;
+            background-color:green;
+            padding-top: 20px;
+            
+            
+            
+            background-color: skyblue;
+          
+        }
+         .colf{
+          border-left: 2px solid purple;
+          border-right: 2px solid purple;
+          border-top: 2px solid purple;
+          background-color:skyblue;
+
+        }
+        .cols
+        {
+          border-top: 2px solid purple;
+          border-right: 2px solid purple; 
+        }
+        .container{
+            display: flex;
+            max-width: 80%;
+            position:absolute;
+            left: 50%;
+            transform: translate(-50%);}
+        .item{
+          width: auto;
+          height: auto;
+          padding:50px;
+          
+        }
+        #gap{
+          
+          margin-bottom: 50px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div id='header'>
+        <div id='phantom'>PhantomOz</div>
+        <div id='sde'>SDE</div>
+        
+    </div>
+
+
+
+    <div class="container">
+      <div class="colf">
+        <div class="item">
+          <span> <b>Personal profile</b></span
+          ><br /><br />
+          <span>Hi ! i'm a undergraduate student</span><br />
+          <span>from CSE stream i knows basics about</span><br />
+          <span>html & css and i'm looking for</span><br />
+          <span>a intern in web development</span>
+        </div>
+
+        <div class="item">
+            <span><b>Honors and Achievements</b></span><br>
+            <ul>
+            <li><span>Member of developes club GECB</span></li>
+            <li><span>I was school captain</span></li>
+            <li><span>Bus itna hi aur kuchh ni aata</span></li>
+            <li><span>Topper in school</span></li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <span><b>Honors and Achievements</b></span><br>
+            <ul>
+            <li><span>Member of developes club GECB</span></li>
+            <li><span>I was school captain</span></li>
+            <li><span>Bus itna hi aur kuchh ni aata</span></li>
+            <li><span>Topper in school</span></li>
+            </ul>
+        </div>
+      </div>
+      <div class="cols">
+        <div id="gap" class="item">
+            <span> <b>Personal profile</b></span
+            ><br /><br />
+            <span>Hi ! i'm a undergraduate student</span><br />
+            <span>from CSE stream i knows basics about</span><br />
+            <span>html & css and i'm looking for</span><br />
+            <span>a intern in web development</span>
+          </div>
+
+          <div class="item">
+            <span><b>Honors and Achievements</b></span><br>
+            <ul>
+            <li><span>Member of developes club GECB</span></li>
+            <li><span>I was school captain</span></li>
+            <li><span>Bus itna hi aur kuchh ni aata</span></li>
+            <li><span>Topper in school</span></li>
+            </ul>
+        </div>
+        <div class="item">
+            <span><b>Honors and Achievements</b></span><br>
+            <ul>
+            <li><span>Member of developes club GECB</span></li>
+            <li><span>I was school captain</span></li>
+            <li><span>Bus itna hi aur kuchh ni aata</span></li>
+            <li><span>Topper in school</span></li>
+            </ul>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <!-- <div class="header">
+    <h1>
+        PhantomOz
+    </h1>
+    <p id="sde">SDE
+    </div>
+    </p>
+    <div id="container">
+        <div class="first">
+        <div class="colf">
+        <span> <b>Personal profile</b></span><br><br>
+        <span>Hi ! i'm a undergraduate student</span><br>
+        <span>from CSE stream i knows basics about</span><br>
+        <span>html & css and i'm looking for</span><br>
+        <span>a intern in web development</span>
+        </div>
+        
+        <div>
+            <span> <b>Personal profile</b></span><br><br>
+            <span>Hi ! i'm a undergraduate student</span><br>
+            <span>from CSE stream i knows basics about</span><br>
+            <span>html & css and i'm looking for</span><br>
+            <span>a intern in web development</span>
+            </div>
+
+        </div>
+    
+        <div class="second">
+        <div>
+            <span><b>Honors and Achievements</b></span><br>
+            <ul>
+            <li><span>Member of developes club GECB</span></li>
+            <li><span>I was school captain</span></li>
+            <li><span>Bus itna hi aur kuchh ni aata</span></li>
+            <li><span>Topper in school</span></li>
+            </ul>
+        </div>
+        <div col="colf">
+            <span><b>Honors and Achievements</b></span><br>
+            <ul>
+            <li><span>Member of developes club GECB</span></li>
+            <li><span>I was school captain</span></li>
+            <li><span>Bus itna hi aur kuchh ni aata</span></li>
+            <li><span>Topper in school</span></li>
+            </ul>
+        </div> </div>
+
+        <div class="third">
+        <div class="colf">
+
+        <span>
+          <h1>Contacts detail</h1>
+        </span><br>
+        <span>Emain <a href="is5617916@gmail.com"> is5617916@gmain.com</a></span><br>
+        <span>contact no 1234556789</span><br>
+        <span> Add. bilaspur cg pin 490005</span><br>
+        </div>
+        <div>
+
+            <span>
+              Contacts detail
+            </span><br>
+            <span>Emain <a href="is5617916@gmail.com"> is5617916@gmain.com</a></span><br>
+            <span>contact no 1234556789</span><br>
+            <span> Add. bilaspur cg pin 490005</span><br>
+            </div>
+        </div>
+    </div> -->
+  </body>
+</html>

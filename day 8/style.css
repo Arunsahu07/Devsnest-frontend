@@ -1,0 +1,22 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px; 
+    
+    background: #DE4738;
+    
+}
+.pixel{
+    margin: 0%;
+    padding: 0%;
+    border:1px solid #E24E3F;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+
+body{
+    padding-left: auto;
+    padding-right: auto;
+    background: #c55959;
+    display: flex;
+    font-family: cursive;
+}
+
+.container{
+    
+    position: relative;
+    left: 35%;
+    width: fit-content;
+    height: fit-content;
+    grid-gap: 2% 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font: 4em sans-serif;
+    text-align: center;
+    border-radius: 14px;
+background: linear-gradient(145deg, #ff7a7a, #e46767);
+box-shadow:  4px 4px 0px #c55959,
+             -4px -4px 0px #ff8b8b;
+        
+}
+.matched {
+    color: green;
+    pointer-events: none;
+}
+.score,.msg{
+    
+    width: 80vw;
+    text-align: center;
+
+}
+.msg{
+    visibility: hidden;
+}

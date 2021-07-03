@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border:3px solid hotpink;
+}
+body{
+  height: 100vh;
+  display:grid;
+  justify-content:center;
+  align-items: center;
+}
+

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 10vh;
+  height: 10vh;
+  background: black;
+  display: inline-block;
+}
+.row:nth-child(even) .box:nth-child(even) {
+  background-color: white;
+}
+.row:nth-child(odd) .box:nth-child(odd) {
+  background-color: white;
+}
+.chessBoard {
+  margin-top: 10%;
+  width: fit-content;
+  border: 3px solid yellow;
+  height: fit-content;
+}

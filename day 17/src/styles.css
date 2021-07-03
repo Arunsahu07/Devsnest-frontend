@@ -1,0 +1,22 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.App {
+  margin-top:30%;
+  font-family: sans-serif;
+  width: 30vw;
+  height: 10vh;
+  text-align: center;
+  
+}
+.cardBox{
+  border:6px solid blue;
+  overflow-y:scroll;
+  height: 50vh;
+  padding: 2%;
+}
+h1{
+  margin-bottom: 10%;
+}

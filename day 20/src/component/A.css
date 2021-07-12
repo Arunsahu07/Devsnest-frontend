@@ -12,31 +12,35 @@ body{
     height: 100vh;
     
     
-    background-color: rgb(37, 1, 1)
+    background-color: white
 }
 .container{
     
     width: 600px;
+    margin: 0 auto;
     
 }
 .showData{
-    border: 5px solid seagreen;
+    border: 5px solid white;
 }
 
 .todoUnit{
     /* display: flex;
     justify-content:center;
     align-items: center; */
-    width: 600px;
+    width: 450px;
     display: flex;
     justify-content: space-between;
-    background-color: grey;
-    /* padding:0 10px; */
+    background-color: white;
+    margin:5px 0;
+    box-shadow: 10px 10px 5px 8px rgb(198, 208, 243);
+-webkit-box-shadow: 3px 9px 2px -4px #7b7b7b;
+-moz-box-shadow: 10px 10px 5px 8px white;
 
 }
 button{
     padding-right: 30px;
-    background-color: grey;
+    background-color:white;
     color:red;
     
 }
@@ -47,7 +51,8 @@ button{
    
 }
 input{
-    background-color: rgb(46, 3, 104);
+    background-color: white;
+    width: 70%;
 }
 .inputField{
     display: flex;
@@ -66,8 +71,10 @@ input{
     
     height:500px;
     width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .task{
     padding: 0 10px;
 }
-

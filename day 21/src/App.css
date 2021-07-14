@@ -1,0 +1,7 @@
+input + .clicked{ 
+    color:red;
+}
+.clicked ~ input{
+    display: none;
+    
+}

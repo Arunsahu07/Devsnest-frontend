@@ -17,10 +17,7 @@ h1{ text-align: center;
     background-position: center;
     border: 1px solid black;
 }
- *{ margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}   
+  
 
 .templates{
     width: 33.33%;
@@ -62,3 +59,7 @@ align-items: spac;
     font-family: 1.4rem;
     padding :5px;}
     .buttonField button { margin :0 30px;}
+    *{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     } 

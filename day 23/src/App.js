@@ -1,3 +1,4 @@
+import './app.css'
 import useToggle  from "./component/useToggle";
 function App()
 {

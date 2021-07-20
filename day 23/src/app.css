@@ -8,5 +8,11 @@ body{
 button{
  padding:10px;
  color:white;
+ width:10vw;
+ transition: all 5s ease-in-out;
  background-color:black;}
-
+ button:hover{
+    outline:aquamarine solid 3px;
+    outline-offset: 5px;
+    transition: all 2s ease-in-out;
+ }

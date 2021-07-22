@@ -1,0 +1,29 @@
+nav a{
+    text-decoration:none;
+       padding-right: 4%;
+    background-color: black;
+    padding:0 20px;
+    margin:1%;
+    color:black;
+    background-color: aquamarine;
+
+}
+nav{
+    background-color:aquamarine;
+}
+
+body{ 
+    font-family: sans-serif;
+    text-align: center;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    font-size:40px;
+
+}
+h1{margin:6%;color:green}
+button{
+    font-size:20px;
+    padding:5px 10px;
+}

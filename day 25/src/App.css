@@ -1,0 +1,22 @@
+.card{
+  background-color:black;
+  color:white;
+  width:35%;
+  padding:10px;
+  text-align: center;
+  margin:0 auto;
+  margin-top:3%;
+}
+.form-group{
+  background-color: black;
+  color:white;
+  margin:0 auto;
+  
+  margin-top: 4%;
+  padding:3%;
+}
+.form-group > input{color: white;
+background-color: black;}
+.form-group > .btn{
+  margin:1%;
+}

@@ -1,0 +1,23 @@
+.completed > span{
+  text-decoration: line-through;
+}
+body {
+  min-height: 100vh;
+  text-align: center;
+}
+button , input{
+  border-radius: 5%;
+  margin:10px;
+  padding:6px;
+  line-height: 100%;
+}
+.items{
+  border:1px solid rgb(199, 199, 199);
+  margin:0.5% 3%;
+}
+.items span{
+  display: inline-block;
+  width:60%;
+  
+  
+}

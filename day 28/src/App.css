@@ -1,0 +1,19 @@
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  font:1.5rem;
+}
+.App{
+  background-color: black;
+  margin-top:19%;
+  width: 30vw;
+  height: 25vw;
+  padding:9%;
+}
+input,button{padding:6px;
+margin:2%;
+color:black;}
+*{color:white;
+padding:4px;
+}

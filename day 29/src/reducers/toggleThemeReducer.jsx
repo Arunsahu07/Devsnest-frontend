@@ -1,6 +1,6 @@
 function toggleThemeReducer(state = false, action) {
     console.log('theme=',state);
-    if (action.type === 'toggleTheme')
+    if (action.type === 'TOGGLE_THEME')
     {
         return ! state;
     }

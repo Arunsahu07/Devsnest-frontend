@@ -6,9 +6,9 @@ body{
 }
 .App{
   background-color: black;
-  margin-top:19%;
-  width: 600px;
-  height: 400px;
+  
+  width: 400px;
+  height: fit-content;
   padding:9%;
 }
 input,button{padding:6px;
@@ -16,4 +16,33 @@ margin:2%;
 color:black;}
 *{color:white;
 padding:4px;
+}
+.light{
+  background-color: red;
+
+}
+
+.light  > * {
+  color:black ;
+
+}
+.light{background-color:rgb(233, 229, 223);
+color: rgb(36, 20, 20);}
+body{
+  background-color: turquoise;
+}
+*{font-size: 1.2rem;}
+.App  {
+  border-radius:4% ;
+  border: 8px solid #dcffe2;;
+}
+.dark-btn{
+  position: relative;
+  float: right;
+  margin-top:195%;
+  margin: 0;
+  padding:5px 5px;
+  font-size:1rem;
+  background-color: rgb(113, 198, 255);
+
 }

@@ -35,9 +35,18 @@ const cartSlice = createSlice({
            newState.push(state[i]);
       }
       return newState;
+    },
+    delItem : (state ,action)=>{
+      const newState=[];
+      for(let i=0; i< state.length; i++)
+      {
+        if (state[i][0] !== action.payload)
+        newState.push(state[i])
+      }
+      return newState
     } 
   },
 });
 console.log(cartSlice.reducer);
-export const {addItem, decQuantity}=cartSlice.actions;
+export const {addItem, decQuantity , delItem}=cartSlice.actions;
 export default cartSlice.reducer;

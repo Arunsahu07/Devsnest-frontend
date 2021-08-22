@@ -1,0 +1,48 @@
+.dark{
+  background-color: rgb(68, 68, 68);
+  color:wheat
+  
+}
+.light * input{
+  background-color: rgba(122, 122, 122, 0.383);
+  color:white
+
+}
+.App{
+  min-height: 100vh;
+  text-align: center;
+}
+*{font-size: 1.2rem;}
+.theme-btn{
+  position: absolute;
+  top:4%;
+  right:4%;
+}
+input{
+  width:40%;
+  height:2rem;
+  margin:10%;
+  margin-right: 4%;
+  padding:.2rem 2rem;
+}
+button{
+  padding:.2rem 1rem;
+  border-radius: 5px;
+}
+.done-btn ,.del-btn{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.done-btn{
+  margin-right: 8px;
+}
+.true{
+  text-decoration: line-through;
+}
+.todos{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin:0 auto;
+}

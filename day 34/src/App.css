@@ -1,0 +1,18 @@
+.App{
+    text-align: center;
+}
+*{font-size: 1.1rem;}
+input{
+    padding:5px 10px;
+    margin-top:5%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.msg{
+    opacity:0.8;
+}
+.note{
+    display: flex;
+    width:45%;
+    margin:1% auto;
+    justify-content: space-between;}

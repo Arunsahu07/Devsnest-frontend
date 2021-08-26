@@ -1,12 +1,21 @@
 import useGetData from "../Hooks/useGetData";
-import { addItem } from "../cartSlice";
+import { addItem } from "../slices/cartSlice";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect , useState } from "react";
+import { getData } from "../slices/productSlice";
 export default function Products() {
-  const items = useGetData();
   const dispatch = useDispatch();
-  const state = useSelector((state) => state.cartDetail);
-  console.log(state);
+     
+     useEffect(() => {
+       let data =  dispatch(getData());
+       console.log("data=",data);
+      }, [dispatch]);
+      
+      let item = useSelector(state=>state.Products) ;
+      let items = item.products;
+      console.log(item,items);
+
   return (
     <>
       <div>
@@ -28,7 +37,7 @@ export default function Products() {
                     {item.description.slice(0, 35)}...
                   </div>
                   <div className="price-and-button">
-                    <div className="product-price">{(item.price * 71).slice(2)}₹</div>
+                    <div className="product-price">{(item.price * 71)}₹</div>
                     <Link to="/">
                       <button
                         className="cart-button"

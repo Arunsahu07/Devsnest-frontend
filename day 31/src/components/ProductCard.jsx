@@ -1,12 +1,12 @@
-import useGetData from "../Hooks/useGetData";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addItem } from "../cartSlice";
+import {Route} from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../slices/cartSlice"
 
 export default function ProductCard() {
   const dispatch = useDispatch();
   
-  const data = useGetData();
+  const data = useSelector(state=>state.Products).products
+ 
   return (
     <div className="product-detail-container">
       {data.length > 0 ? (
@@ -45,7 +45,7 @@ export default function ProductCard() {
             }
             return (
               <div>
-                <Route path={`/${idx}`} component={CurCard} />
+                <Route path={`/${idx}`} component={CurCard}  key={idx}/>
               </div>
             );
           })}
@@ -63,25 +63,4 @@ export default function ProductCard() {
       )}
     </div>
   );
-}
-{
-  /* <div className="cart-item" key={idx}>
-              <div className="cart-image-container">
-                <im
-                  src={data[item[0]].image}
-                  alt="product"
-                  className="cart-image"
-                />
-              </div>
-              <div className="cart-item-info">
-                <div className="cart-product-title">
-                  {data[item[0]].title}
-                </div>
-                <div className="cart-product-description">
-                  {data[item[0]].description}
-                </div>
-                <div className="cart-product-price">
-                  {(data[item[0]].price * 71*item[1]).toFixed(3)}₹
-                </div>
-                </div> */
 }

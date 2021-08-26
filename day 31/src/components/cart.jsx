@@ -1,9 +1,8 @@
 import { useSelector, useDispatch} from "react-redux";
-import useGetData from "../Hooks/useGetData";
-import { decQuantity , addItem, delItem } from "../cartSlice";
+import { decQuantity , addItem, delItem } from "../slices/cartSlice";
 import delicon from "../assets/del.svg";
 export default function Cart() {
-  const data = useGetData();
+  const data = useSelector(state=>state.Products).products
   let total = 0;
   const cartSelected = useSelector((state) => state.cartDetail);
   const dispatch = useDispatch();

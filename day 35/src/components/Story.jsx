@@ -2,7 +2,7 @@ import React from "react";
 
 export const Story = () => {
   return (
-    <div className="story-container container-md md-mx-5 ">
+    <div className="story-container md-mx-5 ">
       {[...Array(25)].map((_, idx) => {
         return (
           <div  id="story" key={idx}>

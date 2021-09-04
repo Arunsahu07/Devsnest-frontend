@@ -1,38 +1,133 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 0;
+}
+.container {
+  display: flex;
+  border: 1px solid rgb(224, 212, 212);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50px;
+  /* position: absolu */
+  margin: 0 auto;
+  background-color: rgb(188, 188, 235);
+}
+input {
+  height: 30px;
+  line-height: 50px;
+  text-align: center;
+  padding: 7px;
+}
+
+.colored {
+  color: rgba(214, 27, 27, 0.863);
+}
+.icons {
+  margin-right: 4%;
+  display: inline-block;
+}
+.navbar .bi {
+  display: inline-block;
+  
+  width: 50px;
+  height: 50px;
+  font-size: 1.8rem;
+  line-height: 50px;
+}
+
+.story-container{
+  border-bottom:1px solid rgb(175, 175, 175);
+  display: flex;
+  padding-top: 7%;
+  
+}
+.post-options .bi{
+  font-size: 1.3rem;
+  margin-right: 7px;
+  
+}
+#story{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.story-container{
+  overflow: scroll;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.story-container::-webkit-scrollbar{
+  width: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#story > .img{
+  display:inline-block;
+ 
+ 
+  border-radius: 50%;
+  width:65px ;
+  height:65px;
+  margin:8px;
+  margin-bottom: 0;
+}
+.post-nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border:1px solid rgb(228, 223, 223);
+  width: 100%;
+  padding:10px;
+}
+.post-nav > input{
+  border: none;
+}
+.post-container{
+
+  margin-top: 2%;
+  margin-left:10%;
+  width:500px;
+  margin-top:2%;
+}
+.post-containers{
+  margin-top:2%;
+  padding:2%;
+  border:5px solid rgb(156, 149, 149);
+}
+.postImage{
+  margin: 0;
+  width: 100%;
+  height: 60%;
+  border:1px solid rgb(255, 247, 247);
+  padding:2px;
+}
+.post-options,.post-user{
+  display: flex;
+  padding:2%;
+  
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(194, 188, 188);
+  
+}
+.bi{
+  font-weight: 700;
+  color: black;
+}
+.story-img{
+  border-radius: 50%;
+  border:2px solid rgb(230, 28, 105);
+}
+.navbar{
+  position: fixed;
+  width: 100vw;
+  /* background-color: rgb(87, 87, 230); */
+  /* margin-left: 10%; */
+  opacity: .8;
+}
+@media screen  and (max-width:600px)
+{
+  .post-container{
+     margin:0 10%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* @media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */

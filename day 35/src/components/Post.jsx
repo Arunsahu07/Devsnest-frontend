@@ -1,25 +1,25 @@
 import React from "react";
 
-export const Post = () => {
+export const Post = ({index}) => {
   const [value, setValue] = React.useState("");
   const [comment, setComment] = React.useState("");
   const [state, setState] = React.useState("");
-  const idx = Math.floor(Math.random()*15);
-  return (
-    <div>
+  // const idx = Math.floor(Math.random()*15);
+   return (
+   <div key={index} data-aos="fade-up">
       <div className="post-containers ">
         <div className="post-user">
           <span>username</span>
-          <i className="bi bi-three-dots"></i>
+          <span><i className="bi bi-three-dots"></i></span>
         </div>
         <img
-          src={`https://picsum.photos/${idx + 500}/${idx + 600}`}
+          src={`https://picsum.photos/${index + 500}/${index + 600}`}
           alt=""
           className="postImage"
         />
         <div>
           <div className="post-options">
-            <span>
+            <span style={{display:'flex',alignItems:"center"}}>
               <i
                 className={
                   state === "heart" ? "bi bi-heart-fill" : "bi bi-heart"
@@ -58,12 +58,11 @@ export const Post = () => {
           <div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
             quo voluptates ea autem adipisci soluta tempore nam assumenda
-            <br/>
             <br />
             {comment}
           </div>
           <div className="post-nav ">
-            <i className="bi bi-emoji-smile-fill"></i>
+            <span><i className="bi bi-emoji-smile-fill"></i></span>
             <input
               placeholder="add a comment"
               onKeyPress={(e) => {
@@ -76,14 +75,14 @@ export const Post = () => {
               onChange={(e) => setValue(e.target.value)}
               value={value}
             ></input>
-            <botton
+            <button
               onClick={() => {
                 setComment(value);
                 setValue("");
               }}
-            >
+             style={{border:"none"}}>
               post
-            </botton>
+            </button>
           </div>
         </div>
       </div>

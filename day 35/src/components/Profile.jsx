@@ -21,7 +21,7 @@ export const Profile = () => {
           return  <div className="suggested-userProfile" key={idx}>
     
           <span style={{display:"flex"}}>
-            <img  src={`https://picsum.photos/50/50`} className="suggetions-img" />
+            <img  src={`https://picsum.photos/50/${50+idx}`}  alt="" className="profile-imgs" />
             <span className="user-detail">
               <span style={{fontWeight:"700"}}>username</span>
               <div style={{opacity:"0.8"}}>follows you</div>

@@ -3,6 +3,9 @@
   margin: 0;
   padding-top: 0;
 }
+.navbar * {
+  color:rgb(149, 24, 24);
+}
 .container {
   display: flex;
   border: 2px solid rgb(195, 239, 248);
@@ -13,7 +16,7 @@
   height: 50px;
   /* position: absolu */
   margin: 0 auto;
-  background-color: rgb(62, 62, 143);
+  background-color: rgb(0, 126, 94);
 }
 input {
   height: 30px;
@@ -22,33 +25,27 @@ input {
   padding: 7px;
 }
 
-.colored {
-  color: rgba(214, 27, 27, 0.863);
-}
 .icons {
   margin-right: 4%;
   display: inline-block;
 }
 .navbar .bi {
   display: inline-block;
-
-  width: 50px;
-  height: 50px;
   font-size: 1.8rem;
-  line-height: 50px;
+  padding-right: 10px;
 }
 
 .story-container {
   border-bottom: 2px solid rgb(252, 174, 255);
   display: flex;
-  padding-top: 7%;
+  padding-top:60px; ;
   width: 600px;
   margin-left: 10%;
  
 }
 .post-options .bi {
   font-size: 1.3rem;
-  margin-right: 7px;
+  /* margin-right: 7px; */
 }
 #story {
   text-align: center;
@@ -75,12 +72,10 @@ input {
   align-items: center;
   border: 1px solid rgb(228, 223, 223);
   width: 100%;
-  padding:0,  5px;
+  padding: 5px;
 }
-.post-nav > input {
-  border: none;
-}
-.post-nav > bi{margin-top: 50px;}
+
+.post-nav > input{border:none}
 .post-container {
   margin-top: 2%;
   margin-left: 10%;
@@ -88,11 +83,12 @@ input {
   margin-top: 2%;
 }
 .post-containers {
+  background-color: rgb(248, 248, 248);
   margin-top: 2%;
   padding: 2%;
   border: 5px solid rgb(219, 183, 240);
   border-radius: 5px;
-  height: fit-content;
+  height: 550px;
 }
 .postImage {
   margin: 0;
@@ -104,8 +100,9 @@ input {
 .post-options,
 .post-user {
   display: flex;
-  padding: 1%;
   align-items: center;
+  padding:0 1%;
+  height: 35px;
 
   justify-content: space-between;
   border: 1px solid rgb(171, 241, 224);
@@ -116,28 +113,42 @@ input {
   color: black;
   margin-bottom: 4%;
 }
+.bi-chevron-right{
+left: calc(7% + 600px);
+}
 .story-img {
   border-radius: 50%;
   border: 2px solid rgb(230, 28, 105);
+  width: 67px;
+  height: 67px;
 }
 .navbar {
   position: fixed;
   width: 100vw;
   /* background-color: rgb(87, 87, 230); */
   /* margin-left: 10%; */
-  opacity: 0.8;
+  opacity: 0.9;
 }
 @media screen and (max-width: 600px) {
   .post-container {
-    margin: 0 10%;
+    margin: 0;
+    width: 100%;
   }
+  .story-container{
+    margin: 0;
+  }
+  .bi-chevron-right{
+    left:90%;
 }
-
-.userProfile,
+.bi-chevron-left{
+  left:6%;
+}
+}
 .suggested-userProfile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2%;
 
   padding: 0 0.5%;
 }
@@ -163,6 +174,7 @@ input {
   position:fixed;
   left:calc(610px + 10%);
   top:17%;
+  padding:0 3%;
 }
 .suggetions-img{
   border-radius: 50%;
@@ -171,4 +183,23 @@ input {
 }
 .post-options span .bi{
   margin: 10px;;
+}
+.bi-chevron-right ,.bi-chevron-left{
+  position: absolute;
+  margin-top:34px;
+  font-weight: 1.3rem;
+  color:rgb(83, 3, 97);
+  font-weight: 900;
+  font-size: 1.3;
+  width: 23px;
+  text-align: center;
+background-color: white;
+border-radius: 50%;
+}
+.bi-chevron-left{left:11%;}
+.profile-imgs{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-right: 2%;
 }

@@ -5,7 +5,7 @@ export const Posts = () => {
     return (
         <div className="post-container">
          {   [...Array(15)].map((_,idx)=>
-            <Post/>
+            <Post index={idx} />
             )}
         </div>
     )
